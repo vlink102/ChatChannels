@@ -3,8 +3,6 @@ package com.clonkc.chatchannels;
 import dev.dejvokep.boostedyaml.YamlDocument;
 import lombok.Getter;
 
-import java.util.List;
-
 @Getter
 public class Configuration {
     private final ChatChannels plugin;

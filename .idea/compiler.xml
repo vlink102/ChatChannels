@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ChatChannels" target="1.5" />
+      <module name="ChatChannels" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
