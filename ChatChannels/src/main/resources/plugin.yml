@@ -1,0 +1,7 @@
+name: ChatChannels
+version: '${project.version}'
+main: com.clonkc.chatchannels.ChatChannels
+api-version: 1.18
+prefix: ChatChannels
+authors: [ V_Link ]
+description: Chat Channels plugin

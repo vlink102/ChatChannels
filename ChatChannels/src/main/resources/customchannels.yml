@@ -1,0 +1,17 @@
+# File version (do NOT edit):
+file-version: 1.2
+
+# Layout:
+# ChannelName:
+#   format: "yourFormat (Optional placeholders: %player%, %message%, %coordinates%, %world%, %blocks%"
+
+# Example:
+# testchannel:
+#  format: "&e[TEST] &7<%player%&7> &f%message% &7(Loc: %coordinates% | World: %world% | Blocks: %blocks%)"
+
+# Some ideas:
+# trade:
+#   format: "&d[TRADE] &7<%player%&7> &f%message% &7(%coordinates%&7)"
+
+# help:
+#   format: "&9[HELP] &7<%player%&7> &f%message% &7(%world% | %coordinates%&7)"

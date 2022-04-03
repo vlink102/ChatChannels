@@ -1,0 +1,31 @@
+global,g,gc,globalchat,chatglobal,ac string...:message {
+    nohelp
+    hook globalchat
+    permission chatchannels.global
+}
+staff,sc,staffchat,staffmsg string...:message {
+    nohelp
+    hook staffchat
+    permission chatchannels.staff
+}
+local,lc,localchat,localmsg,al string...:message {
+    nohelp
+    hook localchat
+    permission chatchannels.local
+}
+chatchannels {
+    nohelp
+    reload {
+        nohelp
+        permission chatchannels.reload
+        hook reload
+    }
+}
+chat channel:channel {
+    nohelp
+    hook togglechannel
+}
+chat string:channel {
+    nohelp
+    hook togglechannelstring
+}

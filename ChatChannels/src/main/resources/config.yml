@@ -1,0 +1,48 @@
+# Plugin by: clonkc/V_Link
+
+# File version (do NOT edit):
+file-version: 1.8
+
+prefix: "&b[ChatChannels] &r"
+
+no-permission: "&cYou cannot switch to that channel!"
+
+# Example: "[GLOBAL] <clonkc> Hello World!"
+# -> %player% = Player that sent the message
+# -> %message% = The message that was sent
+global-chat-format: "&6[GLOBAL] &7<%player%&7> &f%message%"
+
+proximity-radius: 10.0 # Float
+
+# Example: "[LOCAL] <clonkc> Hello World! (Distance: 5.4 blocks)"
+# -> %player% = Player that sent the message
+# -> %message% = The message that was sent
+# -> %blocks% = Distance from player to receiver.
+proximity-chat-format: "&a[LOCAL] &7<%player%&7> &f%message% &7(Distance: %blocks% blocks)"
+
+lonely: "&cNo one could hear you... Your message was lost in the wind."
+
+# Example: "[YOU] <clonkc> Hello World! (2 players received)"
+# -> %player% = The player's name
+# -> %message% = The message that was sent
+# -> %receivercount% = The amount of players that received the message.
+self-format: "&b[YOU] &7<%player%&7> &f%message% &7(%receivercount% players received)"
+
+# Example: "[STAFF] <clonkc> Hello World! (Survival | 25, 11, -224)"
+# -> %player% = Player that sent the message
+# -> %message% = The message that was sent
+# -> %world% = The world the staff member is in
+# -> %coordinates% = The location of the staff member
+staff-format: "&c[STAFF] &7<%player%&7> &f%message% &7(%world% | %coordinates%&7)"
+
+# NOTE: Has to be one character, or your messages will turn out interesting.
+staff-chat-key: "#"
+
+# Example: "[ChatChannels] You switched to the trade channel"
+# -> %channel% = The channel that the player switched to.
+switch-channel: "&aYou switched to the &e%channel% &achannel"
+
+# The placeholder for the player name when the console sends a message
+console-player: "&4[CONSOLE]"
+
+reload-message: "&aChatChannels reloaded!"
