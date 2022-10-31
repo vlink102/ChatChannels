@@ -87,7 +87,7 @@ public class ChatEventListener implements Listener {
                     }
                 }
             } else if (Objects.requireNonNull(e.getPlayer().getPersistentDataContainer().get(key, PersistentDataType.STRING)).equalsIgnoreCase(Channels.GLOBAL.getAbilityName())) {
-                Bukkit.broadcastMessage(Replace.rep(configuration.getGlobalChatFormat(), "%player%", e.getPlayer().getDisplayName(), "%message%", e.getMessage()));
+                Bukkit.getOnlinePlayers().forEach(player -> player.sendMessage(Replace.rep(configuration.getGlobalChatFormat(), "%player%", e.getPlayer().getDisplayName(), "%message%", e.getMessage())));
             } else if (Objects.requireNonNull(e.getPlayer().getPersistentDataContainer().get(key, PersistentDataType.STRING)).equalsIgnoreCase(Channels.STAFF.getAbilityName())) {
                 for (Player player : Bukkit.getOnlinePlayers()) {
                     if (player.hasPermission("chatchannels.see.staffchat")) {
